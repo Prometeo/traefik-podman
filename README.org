@@ -1,0 +1,10 @@
+** Enable podman socket
+#+BEGIN_SRC sh
+  systemctl --user enable podman.socket
+#+END_SRC
+
+** Running pods:
+#+BEGIN_SRC sh
+  podman play kube traefik.yaml
+  podman play kube whoami.yaml
+#+END_SRC
